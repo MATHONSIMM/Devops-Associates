@@ -1,64 +1,130 @@
 # Devops-Associates
+# About the project
+This is a PHP entitled Vehicle Insurance Management System. It is a
+web-based application that was developed in PHP and MySQL Database which helps
+to ease the daily transaction of a Vehicle Insurance Businesses. The project allows
+the organisation to store their client-insured vehicle easily. It helps the business
+system be more effective, efficient, and easy to retrieve data. It has a simple and
+pleasant user interface using the Bootstrap Framework and AdminLTE Template. It
+also has user-friendly features and functionalities.
+# The Project
 
-#DevOps Associates - Greenfield Insurance Project
+## Built With 
 
-Welcome to the DevOps Associates' Greenfield Insurance Project repository! This project is a group effort by our team of DevOps engineers to integrate a greenfield project for an insurance company. The system allows users to register their details for login, and the admin can perform CRUD (Create, Read, Update, Delete) operations on the system. The project is developed using PHP.
+PHP Version 8.0.7
+PHP Language
+MySQL Database
+HTML
+CSS
+JavaScript
+jQuery
+Ajax
+Bootstrap
+AdminLTE
+# Getting Started
+## Prerequisites
+**How to Run on Azure**
+Azure Services 
+Azure/CI/CD Devops Agile
+## Installation
+**How to Run Locally**
+Download and install any local web server such as XAMPP/WAMP
+Download the provided source code zip file.
 
-##Table of Contents
+**Setup**
+1. Enable or Uncomment the GD Library on your php.ini file.
+2. Open your XAMPP/WAMP's Control Panel and start Apache and MySQL.
+3. Extract the downloaded source code zip file.
+4. If you are using XAMPP, copy the extracted source code folder and paste it
+into the XAMPP's "htdocs" directory. And If you are using WAMP, paste it into
+the "www" directory.
+5. Browse the PHPMyAdmin in a browser. i.e. (http://localhost/phpmyadmin)
+6. Create a new database naming vims_db.
+7. Import the provided SQL file. The file is known as vims_db.sql located inside
+the database folder.
+8. Browse the Vehicle Insurance Management System in a browser. i.e.(http://localhost/vims/)
+# Usage
 
-Introduction
-Features
-Technologies Used
-Getting Started
-Deployment
-Contributing
-License
-Introduction
-The Greenfield Insurance Project is a web-based application that provides a user registration and authentication system for insurance company customers. The system enables users to register their personal details, such as name, email, and password, and securely log in to access their insurance-related information. Additionally, an admin interface is available to perform CRUD operations on the system, allowing management of user accounts and related data.
+**Home Page**
+Find Login field to access the system 
+Fill in your personal username and password 
+**Dashboard Pane**
+Consists of: 
+1. Total Packages
+2. Active Policies
+3. Inactive Policies
+4. Clients
+5. Vehicles Insured
+On the upper right corner find:
+Admin/User Tab 
+Click on the dropdown arrow to access your profile and to logout 
+**Client Lists Pane**
+On the upper left corner, sroll on the opposite facing arrows next to Show to see existing clients.
+On the upper right corner, click on the **Add New Client icon** to add new clients. 
+Under the action field, you will find a dropdown arrow which will display
+1. view 
+2. edit 
+3. delete
+Navigate through the pages on the bottom left icon showing previous and next.
+**Contracts Pane**
+On the upper left corner, sroll on the opposite facing arrows next to Show to see existing contracts.
+On the upper right corner, click on the **Add New Client icon** to add new contracts. 
 
-##Features
+**Transactions Pane**
+On the Reports is where we find Transactions.
+On the transactions there is an option where you can edit
+the dates of the transactions.
+After changing the dates you **press filter**, 
+there will be new transactions below based on the dates you chose.
+Next to filter button is the **print button**,
+this is for when you want to print the data.
 
-User registration: Users can create an account by providing their personal details.
-User authentication: Secure login functionality for registered users.
-Admin interface: CRUD operations for managing user accounts and related data.
-Data security: Appropriate measures implemented to ensure the security of user information.
-Scalability: Designed to handle growing numbers of users and data efficiently.
-Technologies Used
-The Greenfield Insurance Project is built using the following technologies:
+**Insurance Packages Pane**
+On the insurance packages pane on the upper right, there is a **add new package** option
+This is where you can add the new package details like category name,
+description and status
+There is also where you search on the upper right.
+Below there is a table that shows the entries, it has date created,
+name, description, status and action.
+Under the action field, you will find a dropdown arrow which will display:
+1. View
+2. Edit
+3. Delete
 
-PHP: Server-side scripting language used for the project's backend logic.
-MySQL: Relational database management system for storing user and application data.
-HTML/CSS: Frontend technologies used for designing and presenting the user interface.
-JavaScript: Client-side scripting language used for interactive elements and form validation.
-Git: Version control system for collaborative development and code management.
-Docker: Containerization technology for streamlined deployment and environment consistency.
-Jenkins: Automation server for continuous integration and deployment processes.
-AWS (Amazon Web Services): Cloud platform for hosting and deploying the application.
-Getting Started
-To get started with the Greenfield Insurance Project, follow these steps:
+**In the Policy Types Pane**
+There are different types of policies which will display
+1. Date Created
+2. Code 
+3. Policy Type
+4. Rand/Duration
+5. Status  
+6. Action
+Under the action field you will find a dropdown arrow which will display
+1. View 
+2. Edit 
+3. Delete.
+In the upper right corner, you will find an **Add New policy icon**
+where you can add all the necessay documnetation and save.
+This will automatically updated the policy list.
 
-Clone or download this repository to your local machine.
-Set up a PHP development environment (such as XAMPP, WAMP, or MAMP) on your computer.
-Import the database schema provided in the database/ directory into your MySQL server.
-Configure the necessary database connection settings in the project's configuration file.
-Start your local PHP development server.
-Access the project in your web browser using the provided URL.
-Deployment
-The Greenfield Insurance Project can be deployed to a production environment using Docker and Jenkins. Follow these steps for deployment:
+**In the User list Pane**
+On the upper right corner, you will find the **Create new icon**.
+Add the neccessray details, inlcuding an add image (which is optional) and click save. 
+This will be added on to the new user list.
+Under the action field, there is a dropdown arrow which will dislay
+1. Edit
+2. Delete
 
-Set up a Docker environment on your target server.
-Configure Jenkins for automated build and deployment processes.
-Set up a CI/CD pipeline in Jenkins to build the project, run tests, and deploy it to the server.
-Monitor the deployment process and ensure the application is running successfully.
-For more detailed deployment instructions and considerations, refer to the project's deployment documentation.
+# Roadmap
+Video
+# Contact
+(https://github.com/Mathapelo3487/Devops-Associates)
 
-##Contributing
+# Acknowledgments
+Azure Services
+Github
+VSC
 
-Contributions to the Greenfield Insurance Project are welcome! If you would like to contribute, please follow these steps:
 
-Fork the repository.
-Create a new branch for your contributions.
-Make your changes and enhancements.
-Test your changes thoroughly.
-Submit a pull request detailing your changes and the benefits they bring.
-Please ensure that your contributions align with the project's goals and adhere to the established coding standards and best practices.
+
+
